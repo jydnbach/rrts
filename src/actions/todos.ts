@@ -14,7 +14,7 @@ export interface FetchTodosAction {
 }
 
 export interface DeleteTodoAction {
-  type: ActionTypes.deletetodo;
+  type: ActionTypes.deleteTodo;
   payload: number;
 }
 
@@ -33,7 +33,7 @@ export const fetchTodos = () => {
 
 export const deleteTodo = (id: number): DeleteTodoAction => {
   return {
-    type: ActionTypes.deletetodo,
+    type: ActionTypes.deleteTodo,
     payload: id,
   };
 };
